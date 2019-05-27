@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+ margin: 0;
+  padding: 0;
+}
+
+html, body, body > app-root, app-root > div {
+  height: 100%;
+}
+
+.middle-zone {
+  width: 100%;
+  height: calc(100% - 250px);
+  min-height: 300px;
+  display: flex;
+}
+
+.page-block {
+  width: calc(100% - 300px);
+  height: calc(100% - 0px);
+  overflow: auto;
+}
+.navigator {
+  list-style: none;
+}
+
+@font-face {
+  font-family: fita-vjaz;
+  src: url('assets/fonts/fitaVjaz.ttf');
+}
+@font-face {
+  font-family: CashCapital;
+  src: url('assets/fonts/CashCapital.ttf');
+}

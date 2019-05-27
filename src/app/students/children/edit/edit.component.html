@@ -1,0 +1,29 @@
+<div class="student-info-editor">
+<div class="form">
+  <div class="form-group">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">First Name</span>
+      </div>
+      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="firstName">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Last Name</span>
+      </div>
+      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="lastName">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Age</span>
+      </div>
+      <input type="text" class="form-control" placeholder="Username" aria-label="Username" [(ngModel)]="age">
+    </div>
+  </div>
+  <a href="/students/{{id}}" class="btn btn-primary edit_btn">back to Detail Data</a>
+  <button (click)="saveData(id)" class="btn btn-primary edit_btn">Save changes</button>
+</div>

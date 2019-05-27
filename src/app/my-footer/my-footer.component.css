@@ -1,0 +1,36 @@
+.footer {
+  height: 100px;
+  background: #1d1d40;
+}
+
+img {
+  width: 64px;
+  height: 64px;
+}
+
+.link-block {
+  display: flex;
+  margin: 0 25px;
+}
+
+.link-block span {
+  margin-left: 15px;
+  font-family: "CashCapital", monospace;
+  color: white;
+  font-size: 20pt;
+  display: block;
+  margin-top: 13px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.social_icons {
+  padding-top: 30px;
+}
+
+.social_icons div {
+  display: flex;
+}

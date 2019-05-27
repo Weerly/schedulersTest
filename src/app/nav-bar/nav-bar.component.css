@@ -1,0 +1,34 @@
+.menu-bar-panel {
+  border-right: deepskyblue solid 1px;
+  width: 300px;
+  height: calc(100% - 0px);
+  background: white;
+}
+.page-link {
+  width: 100%;
+  font-size: xx-large;
+  padding-left: 15px
+}
+
+.page-link a {
+  text-decoration: none;
+  color: black;
+  text-shadow: deepskyblue 1.5px 1px;
+  display: block;
+  font-family: "CashCapital", monospace;
+}
+
+.page-link a:active {
+  color: deepskyblue;
+}
+
+.page-link a:hover {
+  color: inherit;
+}
+
+.page-link:hover {
+  cursor: pointer;
+  background: cornflowerblue;
+  color: white;
+}
+

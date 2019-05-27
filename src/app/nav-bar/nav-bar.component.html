@@ -1,0 +1,8 @@
+<div class="menu-bar-panel">
+  <ul class="navigator">
+    <li *ngFor="let page of pages" class="page-link">
+      <a (click)="goPage()" routerLink="/{{page}}">{{page}}</a>
+      <button *ngIf="page == activePage">Add</button>
+    </li>
+  </ul>
+</div>

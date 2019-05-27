@@ -1,0 +1,19 @@
+<div class="student-info">
+  <div class="container">
+    <div class="row">
+      <div class="col left">Id :</div>
+      <div class="col right">{{student.id}}</div>
+      <div class="w-100"></div>
+      <div class="col left">FirstName :</div>
+      <div class="col right">{{student.first_name}}</div>
+      <div class="w-100"></div>
+      <div class="col left">LastName :</div>
+      <div class="col right">{{student.last_name}}</div>
+      <div class="w-100"></div>
+      <div class="col left">Age :</div>
+      <div class="col right">{{student.age}}</div>
+    </div>
+  </div>
+</div>
+
+<a href="/students/{{student.id}}/edit" class="btn btn-primary edit_btn">Edit Student data</a>

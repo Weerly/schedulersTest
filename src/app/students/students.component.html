@@ -1,0 +1,28 @@
+<div>
+  <table class="table table-striped">
+    <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">age</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let student of students;">
+      <td>
+        <a href="/students/{{student.id}}">{{student.id}}</a>
+      </td>
+      <td>
+        <a href="/students/{{student.id}}">{{student.first_name}}</a>
+      </td>
+      <td><a href="/students/{{student.id}}">{{student.last_name}}</a></td>
+      <td>{{student.age}}</td>
+      <td><a class="btn btn-warning" href="/students/{{student.id}}/edit">Edit</a></td>
+      <td><button class="btn btn-danger" (click)="deleteStudent(student.id)">Delete</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>

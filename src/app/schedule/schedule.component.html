@@ -1,0 +1,26 @@
+<div>
+  <table class="table table-striped">
+    <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">group_id</th>
+      <th scope="col">group_title</th>
+      <th scope="col">day</th>
+      <th scope="col">time</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let schedule of schedules;">
+      <td>
+        {{schedule.id}}
+      </td>
+      <td>
+       {{schedule.group_id}}
+      </td>
+      <td>{{schedule.group_title}}</td>
+      <td>{{schedule.day}}</td>
+      <td>{{schedule.time}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

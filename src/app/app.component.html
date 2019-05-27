@@ -1,0 +1,10 @@
+<div>
+  <my-header [visitingPageTitle]="visitingPageTitle"></my-header>
+  <div class="middle-zone" appBlockHeight >
+    <nav-bar (gotoPage)="onDirection($event)" [activePage]="visitingPage"></nav-bar>
+    <div class="page-block">
+      <router-outlet (gotoPage)="onDirection($event)"></router-outlet>
+    </div>
+  </div>
+  <app-my-footer></app-my-footer>
+</div>
