@@ -1,31 +1,30 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {InternalCommunicatorService} from "../../../services/internalCommunicator/internal-communicator.service";
-import {StudentService} from "../../../services/student.service";
-import {Student} from "../../../models/Student";
+import {TeacherService} from "../../../services/teacher.service";
 
 @Component({
   selector: 'app-view',
-  templateUrl: './details.component.html',
-  styleUrls: ['./details.component.css']
+  templateUrl: './detail.component.html',
+  styleUrls: ['./detail.component.css']
 })
-export class DetailsComponent implements OnInit {
+export class DetailComponent implements OnInit {
 
-  student: Student;
+  public  teacher: object = {};
 
   constructor(
     private route: ActivatedRoute,
     private communicator: InternalCommunicatorService,
-    private service: StudentService) {
-    const ObjectData = {title: 'Student\'s Detail Page', hasPageSubMenu: true};
+    private service: TeacherService) {
+    const ObjectData = {title: 'Teachers\'s Detail Page'};
     this.communicator.goPage(ObjectData);
   }
 
   ngOnInit() {
     const id: string = this.route.snapshot.paramMap.get("id");
     const Id: number = parseInt(id, 10);
-    this.service.getStudent(Id)
-      .subscribe(students => this.student = students);
+    this.service.getTeacher(Id)
+      .subscribe(teachers => this.teacher = teachers);
   }
 
 }

@@ -1,0 +1,22 @@
+<div class="student-info">
+  <div class="container">
+    <div class="row">
+      <div class="col left">Id :</div>
+      <div class="col right">{{teacher.id}}</div>
+      <div class="w-100"></div>
+      <div class="col left">FirstName :</div>
+      <div class="col right">{{teacher.first_name}}</div>
+      <div class="w-100"></div>
+      <div class="col left">LastName :</div>
+      <div class="col right">{{teacher.last_name}}</div>
+      <div class="w-100"></div>
+      <div class="col left">JobTitle :</div>
+      <div class="col right">{{teacher.job_title}}</div>
+      <div class="w-100"></div>
+      <div class="col left">Age :</div>
+      <div class="col right">{{teacher.age}}</div>
+    </div>
+  </div>
+</div>
+
+<a routerLink="/teachers/{{teacher.id}}/edit" class="btn btn-primary edit_btn">Edit Teacher data</a>

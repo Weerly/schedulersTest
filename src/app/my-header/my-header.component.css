@@ -18,7 +18,36 @@
   text-align: center;
 }
 
+@media screen and (max-width: 800px){
+  .welcome {
+    font-size: 30pt;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px){
+  .welcome {
+    font-size: 35pt;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px){
+  .welcome {
+    font-size: 35pt;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px){
+  .welcome {
+    font-size: 43pt;
+  }
+}
+
+@media screen and (min-width: 1601px){
+  .welcome {
+    font-size: 50pt;
+  }
+}
+
 .welcome {
   font-family: "CashCapital", monospace;
-  font-size: 50pt;
 }

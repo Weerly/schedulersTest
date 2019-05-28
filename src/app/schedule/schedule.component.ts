@@ -12,7 +12,7 @@ export class ScheduleComponent implements OnInit {
 
   schedules: Schedule[] = [];
   constructor(private communicator: InternalCommunicatorService, private service: ScheduleService) {
-    let ObjectData = {title: 'Schedule\'s Page', visitingPage: 'schedule'};
+    const ObjectData = {title: 'Schedule\'s Page'};
     this.communicator.goPage(ObjectData);
   }
 

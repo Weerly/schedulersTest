@@ -19,11 +19,20 @@
     <div class="form-group">
       <div class="input-group mb-3">
         <div class="input-group-prepend">
+          <span class="input-group-text">Job Title</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Job Title" [(ngModel)]="jobTitle">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
           <span class="input-group-text">Age</span>
         </div>
         <input type="text" class="form-control" placeholder="Age" [(ngModel)]="age">
       </div>
     </div>
-    <a routerLink="/students" class="btn btn-primary edit_btn">back to List</a>
-    <button (click)="addStudent()" class="btn btn-primary edit_btn">Add Student</button>
+    <a routerLink="/teachers/create" class="btn btn-primary edit_btn">add new Teacher</a>
+    <a routerLink="/teachers/{{id}}" class="btn btn-primary edit_btn">back to Teacher</a>
+    <button (click)="saveData(id)" class="btn btn-primary edit_btn">Save changes</button>
   </div>

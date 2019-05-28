@@ -10,7 +10,7 @@
   padding-left: 15px
 }
 
-.page-link a {
+.page-link {
   text-decoration: none;
   color: black;
   text-shadow: deepskyblue 1.5px 1px;
@@ -18,12 +18,12 @@
   font-family: "CashCapital", monospace;
 }
 
-.page-link a:active {
-  color: deepskyblue;
+button.page-link {
+  font-family: "CashCapital", monospace;
 }
 
-.page-link a:hover {
-  color: inherit;
+a.page-link:active {
+  color: deepskyblue;
 }
 
 .page-link:hover {

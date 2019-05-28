@@ -1,8 +1,5 @@
 export class Student {
-  // id: number;
-  // first_name: string;
-  // last_name: string;
-  // age: number;
+  // tslint:disable-next-line:variable-name
   constructor(private id, private first_name, private last_name, private age) {}
 
   updateStudent(student: Student) {
@@ -15,12 +12,15 @@ export class Student {
     return this.id;
   }
 
-  getObject(): object {
-    return {
-      id: this.id,
-      first_name: this.first_name,
-      last_name: this.last_name,
-      age: this.age
-    }
+  getFirstName() {
+    return this.first_name;
+  }
+
+  getLastName() {
+    return this.last_name;
+  }
+
+  getAge() {
+    return this.age;
   }
 }

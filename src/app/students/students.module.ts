@@ -7,7 +7,6 @@ import {DetailsComponent} from "./children/details/details.component";
 import {StudentsRoutingModule} from "./students-routing.module";
 import { EditComponent } from './children/edit/edit.component';
 import {FormsModule} from "@angular/forms";
-import {StudentMock} from "../mocking/Students";
 
 @NgModule({
   declarations: [StudentsComponent, CreateComponent, DetailsComponent, EditComponent],

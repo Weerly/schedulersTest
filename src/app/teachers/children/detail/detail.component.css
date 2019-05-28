@@ -1,0 +1,28 @@
+.student-info {
+  width: 1000px;
+  border: deepskyblue solid 1px;
+  margin: 100px 8%;
+  box-shadow: grey 1px 2px 2px;
+}
+
+.student-info div.col {
+  height: 50px;
+  border: 1px solid;
+  padding: 11px 0 0 50px;
+  font-size: 21pt;
+  font-weight: 600;
+}
+
+.student-info div.left {
+  border-right: none;
+}
+
+.student-info div.right {
+  border-left: none;
+}
+
+.edit_btn {
+  margin: 1px 25%;
+  width: 450px;
+  font-size: 15pt;
+}

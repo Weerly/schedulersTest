@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import {InternalCommunicatorService} from "../../../services/internalCommunicator/internal-communicator.service";
-import {StudentService} from "../../../services/student.service";
 import {Student} from "../../../models/Student";
+import {TeacherService} from "../../../services/teacher.service";
+import {Teacher} from "../../../models/Teacher";
 
 @Component({
   selector: 'app-create',
@@ -14,22 +15,24 @@ export class CreateComponent {
   age: string;
   firstName: string;
   lastName: string;
+  jobTitle: string;
 
   constructor(
     private communicator: InternalCommunicatorService,
-    private service: StudentService) {
-    const ObjectData = {title: 'Student\'s Creating Page'};
+    private service: TeacherService) {
+    const ObjectData = {title: 'Teacher\'s Creating Page'};
     this.communicator.goPage(ObjectData);
   }
 
-  addStudent() {
+  addTeacher() {
     const id = this.service.getLastId() + 1;
-    const student: Student = new Student(
+    const teacher: Teacher = new Teacher(
       id,
       this.firstName,
       this.lastName,
+      this.jobTitle,
       parseInt(this.age, 10),
     );
-    this.service.addStudent(student);
+    this.service.addTeacher(teacher);
   }
 }

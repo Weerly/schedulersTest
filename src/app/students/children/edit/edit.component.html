@@ -5,7 +5,7 @@
       <div class="input-group-prepend">
         <span class="input-group-text">First Name</span>
       </div>
-      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="firstName">
+      <input type="text" class="form-control" placeholder="First Name" [(ngModel)]="firstName">
     </div>
   </div>
   <div class="form-group">
@@ -13,7 +13,7 @@
       <div class="input-group-prepend">
         <span class="input-group-text">Last Name</span>
       </div>
-      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="lastName">
+      <input type="text" class="form-control" placeholder="Last Name" [(ngModel)]="lastName">
     </div>
   </div>
   <div class="form-group">
@@ -21,9 +21,10 @@
       <div class="input-group-prepend">
         <span class="input-group-text">Age</span>
       </div>
-      <input type="text" class="form-control" placeholder="Username" aria-label="Username" [(ngModel)]="age">
+      <input type="text" class="form-control" placeholder="Age" [(ngModel)]="age">
     </div>
   </div>
-  <a href="/students/{{id}}" class="btn btn-primary edit_btn">back to Detail Data</a>
+  <a routerLink="/students/create" class="btn btn-primary edit_btn">add new Student</a>
+  <a routerLink="/students/{{id}}" class="btn btn-primary edit_btn">back to Student</a>
   <button (click)="saveData(id)" class="btn btn-primary edit_btn">Save changes</button>
 </div>

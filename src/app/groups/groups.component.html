@@ -1,3 +1,18 @@
-<p>
-  groups works!
-</p>
+<div>
+  <table class="table table-striped">
+    <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Title</th>
+      <th scope="col">~</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let group of groups;">
+      <td>{{group.id}}</td>
+      <td>{{group.title}}</td>
+      <td><a class="btn btn-warning" routerLink="/groups/{{group.id}}/schedule">List of schedulers</a></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
